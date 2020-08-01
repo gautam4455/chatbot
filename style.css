@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.main {
+	border: 1px solid #333;
+	margin: 0 auto;
+	width: 50%;
+}
+.chatbox {
+	max-height: 450px;
+	overflow: auto;
+}
+h2 {
+	padding: 20px 0px;
+}
+.card {
+	background: url('image/whatsapp-bg.jpg') no-repeat;
+	border: none;
+}
+.card-header {
+	background-color: #ccc;
+}
+.card-body {
+	padding: 0px 20px;
+}
+.message-body p {
+	position: relative;
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 10px;
+}
+.message-user {
+	float: right;
+	display: block;
+	clear: both;
+}
+.message-user .message-img {
+	float: right;
+	padding: 0px 10px;
+}
+.message-header .message-user .message-header {
+	float: right;
+}
+.message-user .message-body {
+	float: right;
+	display: inline-block;
+	padding: 0px 10px;
+}
+.message-user .message-body p {
+	float: right;
+}
+.message-bot {
+	float: left;
+	clear: both;
+}
+.message-bot .message-img {
+	float: left;
+	padding: 0px 10px;
+}
+.message-bot .message-body {
+	float: left;
+	display: inline-block;
+}
+.message-bot .message-body p {
+	float: right;
+}
+
+
+/* Respoonsive */
+@media screen and (max-width: 767px) {
+	.main {
+		width: 100%;
+	}
+	.message-img {
+		display: none;
+	}
+	.message-body p {
+		background-color: #fff;
+	}
+	.message-user .message-body .message-p {
+		clear: both;
+	}
+}
